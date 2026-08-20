@@ -1,0 +1,58 @@
+{
+  "name": "dsh-tool-github",
+  "description": "GitHub REST API tools for DeepSeek Harness: repositories, search, issues, pull requests, comments, account binding, and workspace integration, with a browser-side GitHub panel in the web GUI",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkwkeven/dsh-tool-github.git"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "github",
+    "agent",
+    "plugin"
+  ],
+  "scripts": {
+    "test": "node test/self-test.mjs && node test/host-smoke.mjs && node test/command-contract.mjs && node test/schema-audit.mjs && node test/client-integration.mjs",
+    "test:client": "node test/client-integration.mjs",
+    "test:host": "node test/host-smoke.mjs && node test/command-contract.mjs && node test/schema-audit.mjs",
+    "check": "node --check lib/index.js && node --check lib/client.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-runtime"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-credentials": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

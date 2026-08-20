@@ -1,0 +1,5 @@
+# dsh-tool-github bundle: inserts the GitHub tool plugin row into the profile.
+# The row registers the model-facing github_* tools on the agent's tool catalog.
+- insert:
+    - id: tool-github
+      name: '@dsh-external/dsh-tool-github'
