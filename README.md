@@ -1,5 +1,7 @@
 # dsh-tool-github
 
+> [English](README.md) · [中文](README.zh-CN.md)
+
 <p align="center">
   <img src="https://img.shields.io/github/license/tkwkeven/dsh-tool-github" alt="License">
   <img src="https://img.shields.io/github/stars/tkwkeven/dsh-tool-github" alt="GitHub stars">
