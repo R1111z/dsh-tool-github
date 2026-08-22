@@ -1,5 +1,13 @@
 # dsh-tool-github
 
+<p align="center">
+  <img src="https://img.shields.io/github/license/tkwkeven/dsh-tool-github" alt="License">
+  <img src="https://img.shields.io/github/stars/tkwkeven/dsh-tool-github" alt="GitHub stars">
+  <img src="https://img.shields.io/github/forks/tkwkeven/dsh-tool-github" alt="GitHub forks">
+  <img src="https://img.shields.io/github/last-commit/tkwkeven/dsh-tool-github" alt="Last commit">
+  <img src="https://img.shields.io/badge/DeepSeek%20Harness-plugin-4f46e5" alt="DSH plugin">
+</p>
+
 GitHub REST API tools for [DeepSeek Harness](https://github.com/deepseek-ai/DeepSeek-Harness) (DSH). Registers model-facing `github_*` tools so the agent can bind a GitHub account, query repositories, search code/issues, read file content, create issues / pull requests / comments, and clone repositories into selectable workspaces. Also ships a **browser-side GitHub panel** for the web GUI (sidebar icon → account status, workspace list, bind / add-workspace actions) backed by `/github-*` commands.
 
 ## Web GUI panel
