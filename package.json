@@ -1,7 +1,7 @@
 {
   "name": "dsh-tool-github",
   "description": "GitHub REST API tools for DeepSeek Harness: repositories, search, issues, pull requests, comments, account binding, and workspace integration, with a browser-side GitHub panel in the web GUI",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -40,7 +40,7 @@
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": "^4.0.1",
-    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6"
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6 || ^0.2.0-rc.2"
   },
   "dependencies": {
     "@deepseek-ai/schemastery": "^3.18.1"
@@ -48,7 +48,7 @@
   "devDependencies": {
     "@deepseek-ai/cordis": "^4.0.1",
     "@deepseek-ai/dsh-credentials": "^0.1.0-rc.6",
-    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6"
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6 || ^0.2.0-rc.2"
   },
   "engines": {
     "node": ">=20"
