@@ -2,4 +2,4 @@
 # The row registers the model-facing github_* tools on the agent's tool catalog.
 - insert:
     - id: tool-github
-      name: '@dsh-external/dsh-tool-github'
+      name: 'dsh-tool-github'
